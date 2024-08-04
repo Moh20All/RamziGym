@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="159.0" prefWidth="348.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.ramzigym.controller.LoginController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <PasswordField fx:id="passwordField" prefHeight="22.0" prefWidth="151.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <MFXButton onAction="#handleLoginAction" prefHeight="25.0" prefWidth="150.0" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   <MFXTextField fx:id="usernameField" maxHeight="15.0" prefWidth="151.0" GridPane.columnIndex="1" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints vgrow="NEVER" />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
